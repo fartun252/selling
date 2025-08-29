@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #007787;
+}
+
+.header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.menu{
+    display: none;
+}
+
+.list{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.btn-1{
+    border: none;
+    background-color: var(--primary-color);
+    padding: 4px 6px;
+}
+
+.btn-2{
+    border: none;
+    background-color: var(--primary-color);
+    padding: 4px 6px;
+}
+
+/* herro */
+
+.herro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem 0px;
+}
+
+.herro-left{
+    width: 500px;
+}
+
+.text{
+    font-size: 60px;
+    font-weight: 500p;
+    line-height: 80px;
+}
+
+.house{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.btn-3{
+    border: none;
+    background-color:black;
+    color: white;
+    padding: 4px 6px;
+}
+
+
+
+.btn-4{
+    border: none;
+    background-color: var(--primary-color);
+    padding: 4px 6px;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/*showcase*/
+
+.right-showcase{
+    width: 500px;
+}
+.leftbg{
+    border-radius: 20px;
+}
+
+/*project*/
+
+.lefthome{
+    border-radius: 20px;
+}
+
+.project0-ongoing{
+    position: relative;
+}
+
+.child-project{
+    background-color: blue;
+    padding: 20px 60px;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 100px;
+    bottom: -20px;
+  
+}
+
+.prent-project{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.lefthome{
+  border-radius: 20px;
+  width: 400px;
+ 
+}
+.text-project{
+  margin: 4px 0px 10px 40px ;
+}
+
+
+.parent-smile{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.smile-flex-parent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.smile-right{
+    width: 500px;
+    text-align: left;
+}
+
+.real-state{
+    text-align: center;
+}
+
+
+.image-real-state{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+.repeat-state{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.image-real-state{
+    width: 300px;
+    height: 400px;border-radius: 20px;
+    margin-top: 10px;
+
+}
+
+.flex-real-state{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+/*CONTACT US*/
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.input-text{
+    padding: 6px 3px;
+    margin: 6px 0px;
+
+}
+
+.btn-5{
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 4px;
+}
+
+.footer{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    padding: 10px 0px 4px 0px;
+
+}
+
+.footer-list{
+    list-style: none;
+}
+
+
+/* responsive */
+
+@media (max-width: 480px){
+
+    .list{
+        display: none;
+    }
+    .wrapper-btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    /* Hero */
+    .herro{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .text{
+        font-size: 30px;
+        font-weight: 400px;
+        line-height: 30px;
+
+        }
+        .herro-left{
+           width: 300px;
+        }
+        .house{
+            margin-top: 1rem;
+        }
+
+        .showcase{
+            display:flex;
+            flex-direction: column;
+
+        }
+
+        .right-showcase{
+    width: 300px;
+}
+
+/* project */
+.prent-project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+    .lefthome{
+        margin: 2rem;
+    }
+    .smile-flex-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .smile-right{
+         width:400px;
+         text-align: center;
+
+    }
+
+    /* real-state */
+
+       .flex-real-state{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       }
+       .image-real-state{
+        width: 200px;
+       }
+
+       .contact{
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+       }
+
+       .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+       }
+
+}
+
+
